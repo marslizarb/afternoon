@@ -1,0 +1,61 @@
+body {
+    background-color: black;
+    color: aliceblue;
+    margin-left: 3em;
+    margin-right: 11em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    font-family: andale mono, monospace;
+    font-size: 2em;
+    line-height: 1.2em;
+}
+
+::selection {
+  background: cyan;
+}
+
+nav {
+    position: fixed;
+    right: 3em;
+    top: 1em;
+    font-size: .4em;
+    text-align: right;
+    line-height: 2em;
+}
+
+nav a{
+    color: white;
+}
+
+h2 {
+    
+    font-family: avenir, arial, sans-serif;
+    letter-spacing: .1em;
+    padding-top: 1.5em;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: cyan;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: line-through;
+}
+footer {
+    margin-top: 10em;
+    font-size: .2em;
+}
+
+u {
+    line-height: 2.5em;
+}
+
+img {
+    position: inherit;
+    width: 100%;
+}

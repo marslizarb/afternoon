@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>an afternoon rippling</title>
+    <link rel="stylesheet" type="text/css" href="press.css">
+</head>
+
+<body>
+    
+<!--scrolling script-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+  $('a').click(function(){
+      $('html, body').animate({
+          scrollTop: $( $(this).attr('href') ).offset().top
+      }, 500);
+      return false;
+  });
+});
+	</script>
+<!--end scrolling script-->
+
+
+
+<nav>
+    <a href="#top"><center><img src="cassette.gif"><h1 id="title"><i>AN AFTERNOON RIPPLING</i></h1></center></a>
+    <ul>
+        <li><a href="#factsheet">factsheet</a></li>
+        <li><a href="#description">description</a></li>
+		<li><a href="#videos">videos</a></li>
+		<li><a href="#images">images</a></li>
+		<li><a href="#logo">logo & icon</a></li>
+		<li><a href="#contact">contact</a></li>
+        <li>download pdf (coming soon)</li>
+    </ul>
+</nav>
+    
+<img id="top" src="images/posterHorizontal.png">
+    
+<div id="factsheet">
+    <h2>FACTSHEET</h2>
+
+    <p><u>Developer</u><br>
+    Mars Lizard<br>
+    Based in New York-ish</p>
+
+    <p><u>Release date</u><br>
+    April 2017</p>
+
+    <p><u>Platforms</u><br>
+    Mac, PC, Linux</p>
+
+    <p><u>Website</u><br>
+    <a href="/afternoon">marslizard.net/afternoon</a></p>
+
+    <p><u>Price</u><br>
+    Free</p>
+</div>
+    
+<div id="description">
+    <h2>DESCRIPTION</h2>
+    <p>An Afternoon Rippling is a text-heavy 2D adventure game about getting lost in a valley after your car breaks down. On your quest to find the elusive Mechanic, you have conversations with a several strange individuals.</p>
+</div>
+    
+<div id="videos">
+    <h2>VIDEOS</h2>
+    <iframe src="https://player.vimeo.com/video/194343519?byline=0&portrait=0" width="800" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>   
+    
+<div id="images">
+    <h2>IMAGES</h2>
+    <p><u>Coming soon</u><br>
+    </p>
+</div>   
+    
+<div id="logo">
+    <h2>LOGOS & ICONS</h2>
+    <p><u>Coming soon</u><br>
+    </p>
+</div> 
+    
+<div id="contact">
+    <h2>CONTACT</h2> 
+    <p><u>Inquiries</u><br>
+    <a href="mailto:me@marslizard.net">me@marslizard.net</a></p>
+    
+    <p><u>Twitter</u><br>
+    <a href="https://twitter.com/marslizarb" target="_blank">@marslizarb</a>
+    </p>
+    
+    <p><u>Web</u><br>
+    <a href="http://marslizarb.github.io" target="_blank">marslizard.net</a>
+    </p>
+</div>
+    
+<footer>Inspired by <a href="http://dopresskit.com/" target="_blank">presskit()</a> by Rami Ismail (<a href="http://www.vlambeer.com/" target="_blank">Vlambeer</a>)</footer>
+    
+    
+
+</body>
+
+</html>
