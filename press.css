@@ -1,10 +1,10 @@
 body {
     background-color: black;
-    color: aliceblue;
-    margin-left: 3em;
-    margin-right: 11em;
-    margin-top: 1em;
-    margin-bottom: 2em;
+    color: white;
+    margin-left: 4%;
+    margin-right: 30%;
+    margin-top: 3%;
+    margin-bottom: 1%;
     font-family: andale mono, monospace;
     font-size: 2em;
     line-height: 1.2em;
@@ -14,17 +14,13 @@ body {
   background: cyan;
 }
 
-nav {
-    position: fixed;
-    right: 3em;
-    top: 1em;
-    font-size: .4em;
-    text-align: right;
-    line-height: 2em;
+u {
+    line-height: 2.5em;
 }
 
-nav a{
-    color: white;
+img {
+    position: inherit;
+    width: 100%;
 }
 
 h2 {
@@ -46,16 +42,60 @@ a {
 a:hover {
     text-decoration: line-through;
 }
+
 footer {
-    margin-top: 10em;
+    margin-top: 10%;
     font-size: .2em;
 }
 
-u {
-    line-height: 2.5em;
+/* navigation menu */
+
+nav {
+    position: fixed;
+    right: 3%;
+    top: 6%;
+    font-size: .4em;
+    text-align: right;
+    line-height: 2em;
+    z-index: 5;
 }
 
-img {
-    position: inherit;
-    width: 100%;
+nav a{
+    color: white;
+}
+
+nav img {
+    width: 50%;
+}
+
+/* responsive video frame */
+
+.video {
+    position: relative;
+	padding-bottom: 73%; 
+	padding-top: 0;
+	height: 0;
+}
+
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* for tiny baby screens */
+
+@media screen and (max-width: 800px) {
+ 
+    nav {
+        display: none;
+    }
+    
+    body {
+        margin-right: 4%;
+        font-size: 1em;
+    }
+ 
 }
