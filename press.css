@@ -66,10 +66,9 @@ nav {
     position: fixed;
     right: 3%;
     top: 6%;
-    font-size: 1.1vw;
+    font-size: .4em;
     text-align: right;
     line-height: 2em;
-    z-index: 5;
 }
 
 nav a{
@@ -78,6 +77,10 @@ nav a{
 
 nav img {
     width: 50%;
+}
+
+#title {
+    text-align: center;
 }
 
 /* responsive video frame */
@@ -99,8 +102,52 @@ nav img {
 
 /* for tiny baby screens */
 
+@media screen and (max-width: 1000px) {
+    
+    body {
+        font-size: 1.8em;
+    }
+    
+}
+
 @media screen and (max-width: 850px) {
- 
+    
+    body {
+        font-size: 1.3em;
+    }
+    
+    nav {
+        font-size: .7em; 
+        width: 25%;
+        top: 0;
+        right: 3%;
+    }
+    
+    #title {
+        text-align: right;
+    }
+    
+    #title h1 { 
+        display: none; 
+    }
+    
+    #title img {
+        position: inherit;
+        margin-top: 10%;
+        
+    }
+}
+
+@media screen and (max-width: 700px) {
+    
+    body {
+        font-size: 1.1em;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    
     nav {
         display: none;
     }
@@ -108,7 +155,15 @@ nav img {
     body {
         margin-right: 4%;
         font-size: 1em;
+        line-height: 1.5em;
     }
-
 }
 
+@media screen and (max-width: 200px) {
+    
+    .columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
