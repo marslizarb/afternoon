@@ -54,7 +54,7 @@ nav {
     position: fixed;
     right: 3%;
     top: 6%;
-    font-size: .4em;
+    font-size: 1.1vw;
     text-align: right;
     line-height: 2em;
     z-index: 5;
@@ -97,5 +97,5 @@ nav img {
         margin-right: 4%;
         font-size: 1em;
     }
- 
+
 }
