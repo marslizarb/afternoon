@@ -19,6 +19,10 @@ body {
     padding-bottom: 2em;
 }
 
+.container li {
+    list-style: square;
+}
+
 .columns {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -49,9 +53,6 @@ h2 {
     letter-spacing: .1em;
 }
 
-li {
-    list-style: none;
-}
 
 a {
     color: cyan;
@@ -81,7 +82,11 @@ nav {
     line-height: 2em;
 }
 
-nav a{
+nav li {
+    list-style: none;
+}
+
+nav a {
     color: white;
 }
 
@@ -182,5 +187,5 @@ nav img {
         column-count: 1;
     }
     
-    .
+    
 }
