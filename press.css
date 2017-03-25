@@ -17,22 +17,25 @@ body {
 .container {
     padding-top: 1.5em;
     padding-bottom: 2em;
+    overflow: hidden;
 }
 
 .container li {
     list-style: square;
 }
 
-.columns {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-    margin: 0;
+.colLeft {
+    width: 48%;
+    float: left;
+}
+
+.colRight {
+    width: 48%;
+    float: right;
 }
 
 .fancybox {
     width: 48.5%;
-    display: grid;
 }
 
 #icon {
@@ -61,6 +64,13 @@ a {
 
 a:hover {
     text-decoration: line-through;
+    
+}
+
+a:hover img {
+    opacity: .75;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
 u {
@@ -177,15 +187,4 @@ nav img {
         padding-bottom: 3%;
         
     }
-}
-
-@media screen and (max-width: 200px) {
-    
-    .columns {
-        -webkit-column-count: 1;
-        -moz-column-count: 1;
-        column-count: 1;
-    }
-    
-    
 }
