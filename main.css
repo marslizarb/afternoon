@@ -129,3 +129,39 @@ span {
     font-size: 4em;
     text-align: center;
 }
+
+.awards img {
+    max-width: 30px;
+    padding: 10px;
+}
+
+.awards {
+    padding-bottom: 20%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.awards h1 {
+    text-align: center;
+    line-height: 400%;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.awards p {
+    text-align: center;
+    font-size: 2em;
+    line-height: 1em;
+}
+
+.laurel {
+    overflow: hidden;
+    padding-bottom: 20px;
+}
