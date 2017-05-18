@@ -11,6 +11,10 @@ body {
     line-height: 1.4em;
 }
 
+p {
+    line-height: 1em;
+}
+
 a {
     color: paleturquoise;
     text-decoration: none;
@@ -68,6 +72,12 @@ span {
     font-size: 1.5em;
 }
 
+.text { /* divs composed only of text */
+    padding: 1.5em 0 1.5em 0;
+    font-size: 4em;
+    text-align: center;
+}
+
 
 /* responsive video frame */
 
@@ -87,53 +97,13 @@ span {
 	height: 100%;
 }
 
-.itch {
-    position: relative;
-	padding-bottom: 31.2%; 
-	padding-top: 25px;
-	height: 0;
-}
-
-.itch iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
 #press {
     text-align: center;
     padding: 4em 0 4em 0;
     font-size: 3em;
 }
 
-/* for tiny baby screens */
-
-@media screen and (max-width: 600px) {
- 
-    body {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    
-    #byline {
-        line-height: 5em;
-        font-size: 1em;
-    }
- 
-}
-
-.text {
-    padding: 1.5em 0 1.5em 0;
-    font-size: 4em;
-    text-align: center;
-}
-
-.awards img {
-    max-width: 30px;
-    padding: 10px;
-}
+/* awards section */
 
 .awards {
     padding-bottom: 20%;
@@ -142,26 +112,60 @@ span {
     overflow: hidden;
 }
 
-.awards h1 {
-    text-align: center;
-    line-height: 400%;
-}
-
-.right {
-    float: right;
-}
-
-.left {
-    float: left;
-}
-
 .awards p {
     text-align: center;
     font-size: 2em;
     line-height: 1em;
 }
 
-.laurel {
+.laurel { /* individual award div */
     overflow: hidden;
     padding-bottom: 20px;
 }
+
+.awards img {
+    max-width: 30px;
+    padding: 10px;
+}
+
+/* laurel leaves */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+
+
+/* for tiny baby screens */
+
+@media screen and (max-width: 600px) {
+ 
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: .9em;
+    }
+    
+    #byline {
+        line-height: 5em;
+        font-size: 1.5em;
+    }
+    
+    .awards p {
+        font-size: 1.4em;
+    }
+    
+    .awards img {
+        max-width: 25px;
+    }
+    
+    #contact p {
+        font-size: .7em;
+    }
+ 
+}
+
