@@ -11,6 +11,10 @@ body {
     line-height: 1.4em;
 }
 
+.container { 
+    padding-bottom: 130px;
+}
+
 p {
     line-height: 1em;
 }
@@ -23,17 +27,6 @@ a {
 a:hover {
     color: white;
     text-decoration: line-through;
-}
-
-span {
-    position: inherit;
-    font-size: 1.5em;
-    font-style: italic;
-    font-style: bold;
-}
-
-::selection {
-  background: paleturquoise;
 }
 
 /* game title */
@@ -72,8 +65,7 @@ span {
     font-size: 1.5em;
 }
 
-.text { /* divs composed only of text */
-    padding: 1.5em 0 1.5em 0;
+.text { /* big text divs */
     font-size: 4em;
     text-align: center;
 }
@@ -84,9 +76,8 @@ span {
 .video {
     position: relative;
 	padding-bottom: 73%; 
-	padding-top: 25px;
+	padding-top: 2%;
 	height: 0;
-    margin-bottom: 20%;
 }
 
 .video iframe {
@@ -97,16 +88,10 @@ span {
 	height: 100%;
 }
 
-#press {
-    text-align: center;
-    padding: 4em 0 4em 0;
-    font-size: 3em;
-}
 
 /* awards section */
 
 .awards {
-    padding-bottom: 20%;
     left: 0;
     right: 0;
     overflow: hidden;
@@ -120,7 +105,7 @@ span {
 
 .laurel { /* individual award div */
     overflow: hidden;
-    padding-bottom: 20px;
+    padding: 10px;
 }
 
 .awards img {
@@ -163,8 +148,8 @@ span {
         max-width: 25px;
     }
     
-    #contact p {
-        font-size: .7em;
+    .text {
+        font-size: 3em;
     }
  
 }
