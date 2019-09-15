@@ -68,6 +68,7 @@ a:hover {
 .text { /* big text divs */
     font-size: 4em;
     text-align: center;
+    line-height: 1em;
 }
 
 
